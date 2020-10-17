@@ -21,7 +21,7 @@
 			</thead>
 
 			<tbody>
-				<% books.each do |book| %>
+				<% @books.each do |book| %>
 					<tr>
 						<td>
 							<%= link_to user_path(book.user) do %>
@@ -37,4 +37,3 @@
 		<!--books一覧 -->
 	</div>
 </div>
-
