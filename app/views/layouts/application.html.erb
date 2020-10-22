@@ -16,7 +16,7 @@
     <div class="container">
       <p id="notice"><%= notice %></p>
       <% if user_signed_in? %>
-      <div class="">
+      <div class="search-form">
         <%= form_with(url:search_path, method: :get, local: true) do |f| %>
           <%= f.text_field :word %>
           <%= f.select :range, [['User', 'user'], ['Book', 'book']] %>
